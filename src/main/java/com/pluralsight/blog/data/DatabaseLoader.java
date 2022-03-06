@@ -14,6 +14,10 @@ import java.util.stream.IntStream;
 
 @Component
 public class DatabaseLoader implements ApplicationRunner {
+    
+    public final PostRepository postRepository;
+        
+    
     private final String[] templates = {
             "Smart Home %s", "Mobile %s - For When You're On he Go", "The %s - Your New Favorite Accessory"};
     private final String[] gadgets = {
