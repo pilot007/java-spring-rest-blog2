@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
 @Component
 public class DatabaseLoader implements ApplicationRunner {
     
-    public final PostRepository postRepository;
+    private final PostRepository postRepository;
         
     
     private final String[] templates = {
